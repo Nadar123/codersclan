@@ -1,0 +1,80 @@
+@import "common/variables";
+
+/** Import everything from autoload */
+@import "./autoload/**/*";
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+// @import "~some-node-module";
+
+/** Import theme styles */
+@import "common/global";
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/wp-classes";
+@import "components/top-section";
+@import "components/main-section";
+@import "components/icons-section";
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/tinymce";
+
+body {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.zoom {
+  display: inline-block;
+  position: relative;
+}
+
+.zoom::after {
+  content: "";
+  display: block;
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.zoom img {
+  display: block;
+}
+
+.image-wrap {
+  max-width: 640px;
+  margin: 50px auto;
+}
+
+.image-1 {
+  width: 100%;
+  padding-top: calc(100% / (16 / 9));
+  // background-image: url("https://www.topgear.com/sites/default/files/styles/16x9_1280w/public/news-listicle/image/2017/04/1_1.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &:hover {
+    background-size: 175%;
+  }
+}
