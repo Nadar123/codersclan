@@ -10,6 +10,7 @@ class FrontPage extends Controller
   protected $acf = [
     'top-section',
     'hero_image',
+    'hero_image_mb',
     'main_title',
     'main_sub_title',
     'contact_us_text',

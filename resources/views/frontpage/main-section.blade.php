@@ -21,18 +21,3 @@
     </div>
   @endforeach
 </section>
-
-{{-- <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script> --}}
-<script>
-  {{-- jQuery(document).ready(function(){
-    jQuery('#ex1').zoom();
-  }); --}}
-  {{-- var options = {
-    zoomWidth: 900,
-    offSet: {vertical: 0, horizonal: 0},
-    scale: 1.5,
-    zoomLensStyle: { width: 180, height: 180 },
-    zoomPosition: 'left'
-  }
-  new ImageZoom(document.getElementById('test'), options); --}}
-</script>
