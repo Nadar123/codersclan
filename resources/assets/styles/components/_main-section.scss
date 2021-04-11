@@ -31,6 +31,14 @@
           display: block;
           cursor: zoom-out;
 
+          @media only screen and (max-width: 1024px) {
+            max-width: 100%;
+          }
+
+          @media only screen and (max-width: 768px) {
+            width: 100%;
+          }
+
           @media only screen and (max-width: 600px) {
             max-width: 85%;
             margin: auto;
@@ -86,6 +94,14 @@
         .img-wrapper {
           img {
             cursor: pointer;
+
+            @media only screen and (max-width: 1024px) {
+              max-width: 100%;
+            }
+
+            @media only screen and (max-width: 768px) {
+              width: 100%;
+            }
           }
         }
 
@@ -109,6 +125,10 @@
     .loop-wrapper {
       width: 70%;
       margin: auto;
+
+      @media only screen and (max-width: 1024px) {
+        width: 90%;
+      }
 
       @media only screen and (max-width: 600px) {
         width: 100%;
