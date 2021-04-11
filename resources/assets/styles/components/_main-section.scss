@@ -20,6 +20,7 @@
         width: 100%;
         max-width: 100%;
         min-height: auto;
+        border-radius: 10px;
 
         @media only screen and (max-width: 600px) {
           margin-top: 3rem;
@@ -30,6 +31,7 @@
           min-height: auto;
           border-radius: 10px;
           display: block;
+          cursor: zoom-out;
 
           @media only screen and (max-width: 600px) {
             max-width: 85%;
@@ -106,6 +108,12 @@
 
         @media only screen and (max-width: 600px) {
           flex-direction: column-reverse;
+        }
+
+        .img-wrapper {
+          img {
+            cursor: pointer;
+          }
         }
 
         .advance-protection-content {

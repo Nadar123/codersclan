@@ -26,7 +26,4 @@
 </section>
   {{-- {{dd($icons_rpt)}} --}}
 
-
-  {{-- <div class="image-wrap">
-    <div class="image-1"></div>
-  </div> --}}
+		

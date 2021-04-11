@@ -25,6 +25,7 @@
   width: 100%;
   max-width: 100%;
   min-height: auto;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -38,6 +39,7 @@
   min-height: auto;
   border-radius: 10px;
   display: block;
+  cursor: zoom-out;
 }
 
 @media only screen and (max-width: 600px) {
@@ -122,6 +124,10 @@
   .main-section .columns:last-child .inner-wrapper {
     flex-direction: column-reverse;
   }
+}
+
+.main-section .columns:last-child .inner-wrapper .img-wrapper img {
+  cursor: pointer;
 }
 
 .main-section .columns:last-child .inner-wrapper .advance-protection-content .title,
