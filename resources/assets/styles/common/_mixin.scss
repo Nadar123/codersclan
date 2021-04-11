@@ -1,0 +1,134 @@
+@mixin hero_image {
+  position: relative;
+  width: 100%;
+  // min-height: 600px;
+  min-height: auto;
+  background-repeat: no-repeat;
+  background-position: 80% 100%;
+  background-size: inherit;
+}
+
+@mixin hero_image_mobile {
+  display: block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40vh;
+  margin: auto;
+}
+
+@mixin main_title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 65px;
+  line-height: 68px;
+  color: #f0f;
+  width: 50%;
+  margin-bottom: 0;
+}
+
+@mixin sub_title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  width: 30%;
+  padding: 0 0 2rem 0;
+}
+
+@mixin flex_content_start_center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flex_row_reverse {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+@mixin flex_center_row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+@mixin flex_between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin contact_us_button {
+  border: 0;
+  border-radius: 2px;
+  background-color: #0ff;
+  color: #0b0058;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  text-align: center;
+  padding: 12px 15px;
+  height: auto;
+  transition: all 0.2s ease;
+}
+
+@mixin read_more_link {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  text-align: center;
+  color: #0ff;
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+
+@mixin main_section_title {
+  color: 0e0066;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 47px;
+}
+
+@mixin main_section_text {
+  color: #4a4a4a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+@mixin icon_wrapper_color {
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  min-height: 200px;
+  margin: 0 auto 1rem auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+@mixin icon_section_text {
+  color: #4a4a4a;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  min-height: 50px;
+}
+
+@mixin icon_section_title {
+  color: #0e0066;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 47px;
+}

@@ -2,11 +2,15 @@
   padding: 0 0 3rem 0;
 
   .inner-warpper {
-    display: flex;
-    justify-content: space-between;
+    @include flex_between;
+
     width: 75%;
     margin: auto;
     padding: 5rem 0;
+
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
 
     @media only screen and (max-width: 600px) {
       display: block;
@@ -27,15 +31,7 @@
     }
 
     .icon-wrapper {
-      display: flex;
-      justify-content: center;
-      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
-      border-radius: 50%;
-      width: 200px;
-      height: 200px;
-      min-height: 200px;
-      margin: 0 auto 1rem auto;
-      transition: transform 0.3s ease-in-out;
+      @include icon_wrapper_color;
 
       img {
         width: 78px;
@@ -58,12 +54,7 @@
       }
 
       .text {
-        color: #4a4a4a;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 23px;
-        min-height: 50px;
+        @include icon_section_text;
       }
     }
 
